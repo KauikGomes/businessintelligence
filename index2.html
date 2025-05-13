@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto ValidaOS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s forwards;
+    }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 0.4;
+    }
+  </style>
+</head>
+<body class="bg-black text-white font-['Inter']">
+
+  <!-- Background Video -->
+  <video autoplay muted loop class="video-bg">
+  <source src="https://cdn.coverr.co/videos/coverr-working-on-a-laptop-8486/1080p.mp4" type="video/mp4">
+  Seu navegador não suporta vídeo em HTML5.
+</video>
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex items-center justify-center text-center px-6">
+    <div class="max-w-3xl fade-in">
+      <h1 class="text-5xl font-bold mb-6 leading-tight">💼 Projeto ValidaOS</h1>
+      <p class="text-xl text-gray-300 mb-4">Solução corporativa para validação eficiente de contratos multiárea</p>
+      <p class="text-md text-indigo-400 font-semibold">Tecnologia: Microsoft Power Apps • Segmento: Validação de contratos</p>
+    </div>
+  </section>
+
+  <!-- Desafio -->
+  <section class="py-20 px-6 bg-black bg-opacity-70">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div class="fade-in">
+        <h2 class="text-3xl font-bold mb-4">⚠️ Desafio</h2>
+        <p class="text-gray-300 leading-relaxed">A implantação do sistema SAR2G revelou um gargalo crítico: a validação de contratos era centralizada em um único setor, sem visibilidade ou autoridade sobre outras áreas envolvidas. O controle via planilhas gerava erros, atrasos e retrabalho — com contratos entrando em produção sem revisão completa.</p>
+      </div>
+      <img src="img/desafio.jpg" alt="Desafio" class="rounded-2xl shadow-lg transform hover:scale-105 transition duration-500">
+    </div>
+  </section>
+
+  <!-- Solução -->
+  <section class="py-20 px-6 bg-gray-800 bg-opacity-80">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <img src="img/solucao.jpg" alt="Solução" class="rounded-2xl shadow-lg transform hover:scale-105 transition duration-500">
+      <div class="fade-in">
+        <h2 class="text-3xl font-bold mb-4">🛠️ Solução</h2>
+        <p class="text-gray-300 leading-relaxed">Desenvolvemos uma plataforma em Power Apps integrada ao SAR2G, que automatiza e distribui o fluxo de validação entre os departamentos. Cada área acessa somente os contratos sob sua responsabilidade, aprova sua parte, e o sistema garante que todos os setores envolvidos validem antes da produção.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resultados -->
+  <section class="py-20 px-6 bg-black bg-opacity-70">
+    <div class="max-w-4xl mx-auto text-center fade-in">
+      <h2 class="text-3xl font-bold mb-8">✅ Resultados</h2>
+      <ul class="grid md:grid-cols-2 gap-6 text-left">
+        <li class="bg-gray-800 bg-opacity-90 p-6 rounded-xl shadow-md hover:shadow-xl transition">
+          <i data-lucide="check-circle" class="w-6 h-6 inline-block text-green-400 mr-2"></i>
+          Validação descentralizada, eficiente e auditável
+        </li>
+        <li class="bg-gray-800 bg-opacity-90 p-6 rounded-xl shadow-md hover:shadow-xl transition">
+          <i data-lucide="check-circle" class="w-6 h-6 inline-block text-green-400 mr-2"></i>
+          Eliminação de retrabalho e erros manuais
+        </li>
+        <li class="bg-gray-800 bg-opacity-90 p-6 rounded-xl shadow-md hover:shadow-xl transition">
+          <i data-lucide="check-circle" class="w-6 h-6 inline-block text-green-400 mr-2"></i>
+          Transparência e rastreabilidade total
+        </li>
+        <li class="bg-gray-800 bg-opacity-90 p-6 rounded-xl shadow-md hover:shadow-xl transition">
+          <i data-lucide="check-circle" class="w-6 h-6 inline-block text-green-400 mr-2"></i>
+          Agilidade na liberação de contratos
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Imagens do Sistema -->
+  <section class="py-20 px-6 bg-gray-800 bg-opacity-80">
+    <div class="max-w-6xl mx-auto text-center fade-in">
+      <h2 class="text-3xl font-bold mb-8">📸 Imagens do Sistema</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-gray-700 bg-opacity-90 p-4 rounded-xl hover:shadow-lg transition group">
+          <img src="img/tela1.png" alt="Tela 1" class="rounded-xl mb-2 group-hover:scale-105 transition duration-300">
+          <p class="text-sm text-gray-300">Tela de validação por área responsável</p>
+        </div>
+        <div class="bg-gray-700 bg-opacity-90 p-4 rounded-xl hover:shadow-lg transition group">
+          <img src="img/tela2.jpg" alt="Tela 2" class="rounded-xl mb-2 group-hover:scale-105 transition duration-300">
+          <p class="text-sm text-gray-300">Painel de status de contratos</p>
+        </div>
+        <div class="bg-gray-700 bg-opacity-90 p-4 rounded-xl hover:shadow-lg transition group">
+          <img src="img/tela3.jpg" alt="Tela 3" class="rounded-xl mb-2 group-hover:scale-105 transition duration-300">
+          <p class="text-sm text-gray-300">Histórico de ações e auditoria</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé / Contato -->
+  <footer class="py-12 bg-black bg-opacity-70 text-center fade-in">
+    <h3 class="text-xl font-semibold mb-4">Entre em contato para saber mais</h3>
+    <a href="#" class="inline-block bg-indigo-500 hover:bg-indigo-600 transition text-white px-6 py-3 rounded-full font-semibold">Fale conosco</a>
+    <p class="text-sm text-gray-500 mt-6">&copy; 2025 ValidaOS. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

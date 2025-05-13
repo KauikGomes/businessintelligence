@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Business Intelligence Analytics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: 'Outfit', sans-serif;
+      }
+      .slider-container {
+        position: relative;
+        overflow: hidden;
+      }
+      .slider {
+        display: flex;
+        transition: transform 0.5s ease;
+      }
+      .slider img {
+        min-width: 100%;
+        cursor: pointer;
+      }
+      .nav-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+        z-index: 10;
+      }
+      .nav-button.left {
+        left: 0.5rem;
+      }
+      .nav-button.right {
+        right: 0.5rem;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-white">
+    <!-- Hero Section -->
+    <section class="relative h-screen flex flex-col justify-center items-center text-center px-6 overflow-hidden">
+      <div class="absolute inset-0">
+        <video autoplay muted loop playsinline class="w-full h-full object-cover opacity-20">
+          <source src="https://assets.mixkit.co/videos/preview/mixkit-digital-background-of-numbers-and-graphs-39995-large.mp4" type="video/mp4" />
+        </video>
+        <div class="absolute inset-0 bg-gradient-to-tr from-purple-900 via-black to-blue-900 opacity-70"></div>
+      </div>
+      <h1 class="text-5xl md:text-7xl font-bold z-10 animate-fade-in-up">Business Intelligence Analytics</h1>
+      <p class="mt-6 text-lg md:text-xl max-w-3xl z-10 animate-fade-in-up delay-200">
+        Soluções estratégicas baseadas em dados, desenvolvidas com foco em agilidade, confiabilidade e impacto nos resultados.
+      </p>
+      <a href="#projetos" class="mt-10 px-6 py-3 bg-indigo-500 hover:bg-indigo-600 transition rounded-full font-medium z-10 animate-fade-in-up delay-500">
+        Ver projetos
+      </a>
+    </section>
+
+    <!-- Navegação fixa -->
+    <nav class="fixed top-5 right-5 bg-black/70 backdrop-blur-md px-4 py-2 rounded-lg shadow-lg z-50 hidden md:flex space-x-4 text-sm">
+      <a href="#projeto1" class="hover:text-indigo-400 transition">ValidaOS</a>
+      <a href="#projeto2" class="hover:text-indigo-400 transition">Marcação de Ponto</a>
+      <a href="#projeto3" class="hover:text-indigo-400 transition">Folha de Pagamento</a>
+      <a href="#projeto4" class="hover:text-indigo-400 transition">Hub de Dados</a>
+    </nav>
+
+    <!-- Projetos -->
+    <section id="projetos" class="py-20 px-6 md:px-20 space-y-32">
+      <!-- Projeto 1 -->
+      <div id="projeto1" class="space-y-6">
+        <h2 class="text-3xl font-bold text-indigo-400">ValidaOS</h2>
+        <div class="grid md:grid-cols-2 gap-10">
+          <div class="space-y-4">
+            <p><strong>Tecnologia:</strong> Power Apps</p>
+            <p><strong>Segmento:</strong> Validação de contratos multiárea</p>
+            <p><i class="fas fa-exclamation-triangle text-yellow-400"></i> <strong>Desafio:</strong> Validação centralizada e suscetível a erros, atrasos e retrabalho.</p>
+            <p><i class="fas fa-tools text-blue-400"></i> <strong>Solução:</strong> Plataforma distribuída via Power Apps com controle por área e integração ao SAR2G.</p>
+            <ul class="list-disc pl-6 space-y-1">
+              <li><i class="fas fa-check-circle text-green-400"></i> Validação descentralizada e auditável</li>
+              <li><i class="fas fa-check-circle text-green-400"></i> Eliminação de retrabalho</li>
+              <li><i class="fas fa-check-circle text-green-400"></i> Rastreamento total</li>
+              <li><i class="fas fa-check-circle text-green-400"></i> Agilidade e conformidade</li>
+            </ul>
+          </div>
+          <div class="slider-container">
+            <div class="slider" id="slider1">
+              <img src="tela2.png" onclick="openModal(this.src)" />
+              <img src="ValidaOS2.png" onclick="openModal(this.src)" />
+              <img src="ValidaOS3.png" onclick="openModal(this.src)" />
+            </div>
+            <button class="nav-button left" onclick="moveSlide('slider1', -1)">&#10094;</button>
+            <button class="nav-button right" onclick="moveSlide('slider1', 1)">&#10095;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projeto 2 -->
+      <div id="projeto2" class="space-y-6">
+        <h2 class="text-3xl font-bold text-indigo-400">Acompanhamento da Marcação de Ponto</h2>
+        <div class="grid md:grid-cols-2 gap-10">
+          <div class="space-y-4">
+            <p><strong>Tecnologia:</strong> Power BI</p>
+            <p><strong>Segmento:</strong> Gestão de ponto eletrônico</p>
+            <p><i class="fas fa-exclamation-triangle text-yellow-400"></i> <strong>Desafio:</strong> Falta de visibilidade e controle de adesão ao sistema de ponto.</p>
+            <p><i class="fas fa-tools text-blue-400"></i> <strong>Solução:</strong> Dashboard interativo com dados D-1 por cliente, área e colaborador.</p>
+            <ul class="list-disc pl-6 space-y-1">
+              <li><i class="fas fa-check-circle text-green-400"></i> Gestão centralizada</li>
+              <li><i class="fas fa-check-circle text-green-400"></i> Fim de planilhas e e-mails</li>
+              <li><i class="fas fa-check-circle text-green-400"></i> Insights acionáveis</li>
+              <li><i class="fas fa-check-circle text-green-400"></i> Tomadas de decisão rápidas</li>
+            </ul>
+          </div>
+          <div class="slider-container">
+            <div class="slider" id="slider2">
+              <img src="Ponto1.png" onclick="openModal(this.src)" />
+              <img src="Ponto2.png" onclick="openModal(this.src)" />
+            </div>
+            <button class="nav-button left" onclick="moveSlide('slider2', -1)">&#10094;</button>
+            <button class="nav-button right" onclick="moveSlide('slider2', 1)">&#10095;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projeto 3 -->
+      <div id="projeto3" class="space-y-6">
+        <h2 class="text-3xl font-bold text-indigo-400">Comparativo de Folha de Pagamento</h2>
+        <div class="grid md:grid-cols-2 gap-10">
+          <div class="space-y-4">
+            <p><strong>Tecnologia:</strong> Power BI com integração direta</p>
+            <p><strong>Segmento:</strong> Validação da folha em transição sistêmica</p>
+            <p><i class="fas fa-exclamation-triangle text-yellow-400"></i> <strong>Desafio:</strong> Comparação manual e ineficaz da folha entre sistemas legados e novos.</p>
+            <p><i class="fas fa-tools text-blue-400"></i> <strong>Solução:</strong> Painel conectado ao banco de dados com comparativos em tempo real.</p>
+            <ul class="list-disc pl-6 space-y-1">
+              <li><i class="fas fa-check-circle text-green-400"></i> Validação em tempo real</li>
+              <li><i class="fas fa-check-circle text-green-400"></i> Redução do tempo de análise</li>
+              <li><i class="fas fa-check-circle text-green-400"></i> Detecção imediata de divergências</li>
+              <li><i class="fas fa-check-circle text-green-400"></i> Processo mais confiável</li>
+            </ul>
+          </div>
+          <div class="slider-container">
+            <div class="slider" id="slider3">
+              <img src="Folha1.png" onclick="openModal(this.src)" />
+            </div>
+            <button class="nav-button left" onclick="moveSlide('slider3', -1)">&#10094;</button>
+            <button class="nav-button right" onclick="moveSlide('slider3', 1)">&#10095;</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projeto 4 -->
+      <div id="projeto4" class="space-y-6">
+        <h2 class="text-3xl font-bold text-indigo-400">Hub de Dados para Relatórios Customizados</h2>
+        <div class="grid md:grid-cols-2 gap-10">
+          <div class="space-y-4">
+            <p><strong>Tecnologia:</strong> Integração e automação tabular</p>
+            <p><strong>Segmento:</strong> Relatórios e inteligência operacional</p>
+            <p><i class="fas fa-exclamation-triangle text-yellow-400"></i> <strong>Desafio:</strong> Relatórios manuais e genéricos, com alto retrabalho.</p>
+            <p><i class="fas fa-tools text-blue-400"></i> <strong>Solução:</strong> Hub segmentado por área com geração automática de relatórios tabulares prontos para uso.</p>
+            <ul class="list-disc pl-6 space-y-1">
+              <li><i class="fas fa-check-circle text-green-400"></i> Redução no tempo de manipulação</li>
+              <li><i class="fas fa-check-circle text-green-400"></i> Eliminação de extrações manuais</li>
+              <li><i class="fas fa-check-circle text-green-400"></i> Relatórios prontos e atualizados</li>
+              <li><i class="fas fa-check-circle text-green-400"></i> Autonomia e alinhamento com o negócio</li>
+            </ul>
+          </div>
+          <div class="slider-container">
+            <div class="slider" id="slider4">
+              <img src="Report1.png" onclick="openModal(this.src)" />
+              <img src="Report2.png" onclick="openModal(this.src)" />
+            </div>
+            <button class="nav-button left" onclick="moveSlide('slider4', -1)">&#10094;</button>
+            <button class="nav-button right" onclick="moveSlide('slider4', 1)">&#10095;</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal para Zoom -->
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden z-50">
+      <img id="modal-img" class="max-w-full max-h-full rounded-lg" />
+      <button onclick="closeModal()" class="absolute top-5 right-5 text-white text-3xl">&times;</button>
+    </div>
+
+    <!-- Botão Voltar ao Topo -->
+    <a href="#" class="fixed bottom-6 right-6 bg-indigo-500 text-white p-3 rounded-full shadow-lg hover:bg-indigo-700 transition">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+      let indices = { slider1: 0, slider2: 0, slider3: 0, slider4: 0 };
+
+      function moveSlide(id, direction) {
+        const slider = document.getElementById(id);
+        const total = slider.children.length;
+        indices[id] = (indices[id] + direction + total) % total;
+        slider.style.transform = `translateX(-${indices[id] * 100}%)`;
+      }
+
+      function openModal(src) {
+        document.getElementById("modal-img").src = src;
+        document.getElementById("modal").classList.remove("hidden");
+      }
+
+      function closeModal() {
+        document.getElementById("modal").classList.add("hidden");
+      }
+
+      document.querySelectorAll(".animate-fade-in-up").forEach((el, i) => {
+        el.style.opacity = 0;
+        el.style.transform = "translateY(20px)";
+        setTimeout(() => {
+          el.style.transition = "all 1s ease-out";
+          el.style.opacity = 1;
+          el.style.transform = "translateY(0)";
+        }, 300 + i * 200);
+      });
+    </script>
+  </body>
+</html>

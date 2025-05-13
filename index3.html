@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto ValidaOS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .fade-in {
+      animation: fadeIn 1.5s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="font-[Outfit] bg-gradient-to-tr from-gray-900 via-gray-800 to-gray-900 text-white">
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex items-center justify-center text-center px-6">
+    <div class="max-w-3xl fade-in">
+      <h1 class="text-5xl md:text-6xl font-bold mb-4">💼 Projeto ValidaOS</h1>
+      <p class="text-xl text-gray-300">Validação inteligente de contratos multiárea com <span class="font-semibold text-white">Microsoft Power Apps</span></p>
+    </div>
+  </section>
+
+  <!-- Desafio -->
+  <section class="py-20 px-6 md:px-20 bg-gray-950">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <div class="fade-in">
+        <h2 class="text-3xl font-bold mb-4">⚠️ Desafio</h2>
+        <p class="text-gray-300 leading-relaxed">
+          A implantação do sistema SAR2G revelou um gargalo crítico: a validação de contratos era centralizada em um único setor, sem visibilidade ou autoridade sobre outras áreas envolvidas (mão de obra, materiais, benefícios).
+          O controle via planilhas era manual, gerando erros frequentes, atrasos e retrabalho — com contratos sendo colocados em produção sem revisão completa.
+        </p>
+      </div>
+      <div class="fade-in">
+        <img src="desafio.png" alt="Desafio" class="rounded-xl shadow-xl hover:scale-105 transition-transform duration-300">
+      </div>
+    </div>
+  </section>
+
+  <!-- Solução -->
+  <section class="py-20 px-6 md:px-20">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+      <div class="fade-in">
+        <img src="solucao-placeholder.jpg" alt="Solução" class="rounded-xl shadow-xl hover:scale-105 transition-transform duration-300">
+      </div>
+      <div class="fade-in">
+        <h2 class="text-3xl font-bold mb-4">🛠️ Solução</h2>
+        <p class="text-gray-300 leading-relaxed">
+          Desenvolvemos uma plataforma em Power Apps integrada ao SAR2G, que automatiza e distribui o fluxo de validação entre os departamentos. Cada área acessa somente os contratos sob sua responsabilidade, aprova sua parte, e o sistema garante que todos os setores envolvidos validem antes da produção.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resultados -->
+  <section class="py-20 px-6 md:px-20 bg-gray-950">
+    <div class="max-w-4xl mx-auto text-center fade-in">
+      <h2 class="text-3xl font-bold mb-8">✅ Resultados</h2>
+      <ul class="text-gray-300 text-lg space-y-4">
+        <li>✔️ Processo de validação descentralizado, eficiente e auditável</li>
+        <li>✔️ Eliminação de retrabalho e erros manuais</li>
+        <li>✔️ Transparência em cada etapa e rastreabilidade total</li>
+        <li>✔️ Agilidade na liberação de contratos com garantia de conformidade</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Galeria de Imagens -->
+  <section class="py-20 px-6 md:px-20">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-12 fade-in">📸 Interface do Sistema</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
+          <img src="tela1.png" alt="Tela 1" class="w-full">
+          <div class="p-4">
+            <p class="text-gray-300">Dashboard de contratos pendentes por área.</p>
+          </div>
+        </div>
+        <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
+          <img src="tela2.png" alt="Tela 2" class="w-full">
+          <div class="p-4">
+            <p class="text-gray-300">Fluxo de aprovação automatizado e responsivo.</p>
+          </div>
+        </div>
+        <div class="bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300">
+          <img src="tela3.png" alt="Tela 3" class="w-full">
+          <div class="p-4">
+            <p class="text-gray-300">Mapeamendo de efetivos vendidos e implantados.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
